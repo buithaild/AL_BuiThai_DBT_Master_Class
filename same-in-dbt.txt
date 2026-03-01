@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: source
+    database: dbt_tutorial_dev 
+    schema: source
+    tables:
+      - name: orders
+      - name: customers
+{
+    "sources": [
+        {
+            "name": "source",
+            "database": "dbt_tutorial_dev",
+            "schema": "source",
+            "table": [
+                {
+                    "name": "orders"
+                },
+                {
+                    "name": "customers"
+                }
+            ]
+        }
+    ]
+}
