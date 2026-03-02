@@ -1,0 +1,11 @@
+buithai_dbt_study:
+  outputs:
+    dev:
+      catalog: dbt_tutorial_dev
+      host: dbc-71d1fc6b-b2fd.cloud.databricks.com
+      http_path: 
+      schema: default
+      threads: 1
+      token: 
+      type: databricks
+  target: dev

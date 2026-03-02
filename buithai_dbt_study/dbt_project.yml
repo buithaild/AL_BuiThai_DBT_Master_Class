@@ -42,3 +42,7 @@ models:
       +materialized: table
       schema: gold
       
+seeds:
+  buithai_dbt_study:
+    +schema: bronze
+    
