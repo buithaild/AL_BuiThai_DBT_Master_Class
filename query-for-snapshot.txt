@@ -19,3 +19,33 @@ VALUES
 
 --gold
 SELECT * FROM gold_items;
+
+
+-- dbt deployment with CI/CD
+CREATE TABLE dim_customer
+AS
+SELECT * FROM dbt_tutorial_dev.source.dim_customer;
+
+CREATE TABLE dim_product
+AS
+SELECT * FROM dbt_tutorial_dev.source.dim_product;
+
+CREATE TABLE fact_sales
+AS
+SELECT * FROM dbt_tutorial_dev.source.fact_sales;
+
+CREATE TABLE fact_returns
+AS
+SELECT * FROM dbt_tutorial_dev.source.fact_returns;
+
+CREATE TABLE dim_date
+AS
+SELECT * FROM dbt_tutorial_dev.source.dim_date;
+
+CREATE TABLE dim_store
+AS
+SELECT * FROM dbt_tutorial_dev.source.dim_store;
+
+CREATE TABLE items
+AS
+SELECT * FROM dbt_tutorial_dev.source.items;
