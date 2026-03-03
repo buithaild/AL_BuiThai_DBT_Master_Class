@@ -1,0 +1,1 @@
+{% set var_name = "Bui Thai" %} {{- var_name -}}
